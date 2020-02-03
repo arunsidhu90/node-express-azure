@@ -1,12 +1,7 @@
 trigger:
-- task: SonarQubePublish@4
-  inputs:
-    pollingTimeoutSec: '300'
 - master
-
 pool:
   vmImage: 'Ubuntu-16.04'
-
 steps:
 - task: NodeTool@0
   inputs:
